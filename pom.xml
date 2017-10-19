@@ -26,18 +26,16 @@
          
     <distributionManagement>
          <snapshotRepository>
-                  <id>snapshots</id>
-                  <name>DESKTOP-U60TA16-snapshots</name>
-                  <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-         </snapshotRepository>
-		 <repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>central</id>
-			<name>libs-release</name>
-			<url>http://localhost:8081/artifactory/libs-release-local</url>
-        </repository>
+        <id>snapshots</id>
+        <name>ARTi-snapshots</name>
+        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+		 <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ARTi-releases</name>
+        <url>http://localhost:8081/artifactory/libs-release-local</url>
+    </repository>
     </distributionManagement>
 	
 	<scm>
