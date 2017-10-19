@@ -43,7 +43,6 @@
 	<scm>
 		<url>https://github.com/vinchris/time-tracker</url>
 		<connection>https://github.com/vinchris/time-tracker.git</connection>
-		<!--<developerConnection>scm:git:git@github.com:kevinsawicki/github-maven-example.git</developerConnection>-->
 	  <tag>time-tracker-parent-0.3.1</tag>
   </scm>
     <build>
@@ -75,10 +74,18 @@
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>2.15</version>
                 </plugin>
-				<plugin>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.2</version>
-		</plugin>
+				<plugin>  
+    <groupId>org.apache.maven.plugins</groupId>  
+    <artifactId>maven-release-plugin</artifactId>  
+    <version>2.5.3</version>  
+    <dependencies>  
+     <dependency>  
+      <groupId>org.apache.maven.scm</groupId>  
+      <artifactId>maven-scm-provider-gitexe</artifactId>  
+      <version>1.9.5</version>  
+     </dependency>  
+    </dependencies>  
+	</plugin>
             </plugins>
         </pluginManagement>
     </build>
