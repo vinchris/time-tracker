@@ -43,7 +43,7 @@
 	
 	<scm>
 		<url>https://github.com/vinchris/time-tracker</url>
-		<connection>https://github.com/vinchris/time-tracker.git</connection>
+		<connection>scm:git:git://github.com/vinchris/time-tracker.git</connection>
 		</scm>
     <build>
         <pluginManagement>
