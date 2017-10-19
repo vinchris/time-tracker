@@ -42,7 +42,7 @@
 	
 	<scm>
 		<url>https://github.com/vinchris/time-tracker</url>
-		<connection>scm:git:https://github.com/vinchris/time-tracker.git</connection>
+		<connection>https://github.com/vinchris/time-tracker.git</connection>
 		  <tag>time-tracker-parent-0.3.1</tag>
   </scm>
     <build>
